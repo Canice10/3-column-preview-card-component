@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10em auto;
+    justify-content: center;
+    width: 66em;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.one, .two, .three, img {
+    transition: transform .3s ease-in-out; /*controls the movement*/
+}
+
+.one, .two, .three, img:hover {
+    transform: translate3d(2em, 0, 2em); /*controls the direction*/
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.details📑 {
+    padding-top: 2em;
+}
+
+.description {
+    padding: 2em 0 5.5em 0;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-size: 0.95em;
+}
+
+.containers {
+    min-width: 18em; /*kept on changing widths so I had to use this */
+    max-width: 19em;
+    height: 31em;
+    padding: 2.8em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+button {
+    border-radius: 2em;
+    border-style: none;
+    padding: 1em;
+    width: 10em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+button:hover {
+    font-size: 1em;
+}
+
+.one button {
+    color:hsl(31, 77%, 52%);
+}
+
+.two button {
+    color: hsl(184, 100%, 22%);
+}
+
+.three button {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    color: hsl(228, 45%, 44%);
+    font-size: 0.8em;
+    margin-left: 5.5em;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(277, 64%, 61%);
+    font-size: 1.1em;
+}
+
+/*mobile view*/
+
+@media screen and (max-width: 950px) {
+    main {
+        margin: 3em auto;
+    }
+
+    .main-page {
+        flex-direction: column;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    h2 {
+        font-size: 1.9em;
+    }
+
+    .details📑 {
+        padding-top: 1.5em;
+    }
+
+    .containers {
+        width: 19em;
+        height: 25em;
+        padding: 2.5em;
+    }
+
+    .description {
+        padding: 2em 0 1.5em 0;
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+
+    .one {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    
+    .two {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .three {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    button {
+        padding: 0.7em;
+        width: 9em;
+        font-size: 0.89em;
+    }
+    
+}
